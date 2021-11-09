@@ -4,10 +4,29 @@ function Styleguide() {
   return (
     <div>
       <h2>Colors</h2>
-      <ul>
-        <li style={{ color: 'var(--color-primary)' }}>Primary</li>
-        <li style={{ color: 'var(--color-secondary)' }}>Secondary</li>
-      </ul>
+      <div
+        style={{
+          display: 'flex',
+          gap: 10,
+        }}
+      >
+        <div
+          style={{
+            width: 30,
+            height: 30,
+            background: 'var(--color-secondary)',
+            borderRadius: '50%',
+          }}
+        ></div>
+        <div
+          style={{
+            width: 30,
+            height: 30,
+            background: 'var(--color-primary)',
+            borderRadius: '50%',
+          }}
+        ></div>
+      </div>
       <div>
         <h2>Box</h2>
         <div
