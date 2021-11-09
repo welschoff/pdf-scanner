@@ -32,19 +32,3 @@ button {
   font-family: var(--font-family);
   padding: 0.5rem;
 }
-
-/* .box {
-  display: grid;
-}
-
-.list-entry > * {
-  margin: 0;
-}
-
-.list-entry > *:nth-child(even) {
-  align-self: end;
-}
-
-.list-entry > *:nth-child(odd) {
-  align-self: start;
-} */
