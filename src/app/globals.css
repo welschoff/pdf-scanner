@@ -30,5 +30,5 @@ button {
   border: none;
   background-color: var(--color-secondary);
   font-family: var(--font-family);
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }

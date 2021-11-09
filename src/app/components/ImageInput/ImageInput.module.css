@@ -1,16 +1,15 @@
-.upload {
+/* .upload {
   display: flex;
-  flex-direction: column;
-  place-items: center;
+    flex-direction: column;
   font-family: var(--font-family);
   font-size: 0.8rem;
   text-decoration: underline;
-}
+}  */
 
-.uploadImage {
-  width: 10%;
-  height: 10%;
-}
+/* .uploadImage {
+  width: 50%;
+  height: 50%;
+} */
 
 .input {
   visibility: hidden;
