@@ -1,5 +1,6 @@
 .container {
   display: grid;
+  grid-template-rows: 25% 50% 25%;
   width: 100%;
   margin: 0 auto;
   justify-items: center;
@@ -11,4 +12,19 @@
 .title {
   font-family: var(--font-family);
   color: var(--color-secondary);
+  letter-spacing: 0.1rem;
+}
+
+.scan {
+  width: 90%;
+}
+
+.text {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  text-align: justify;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  width: 90%;
+  font-family: var(--font-family);
 }
