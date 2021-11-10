@@ -31,4 +31,16 @@ button {
   background-color: var(--color-secondary);
   font-family: var(--font-family);
   padding: 0.5rem 1rem;
+  width: 90%;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:disabled {
+  opacity: 20%;
+  transform: none;
 }

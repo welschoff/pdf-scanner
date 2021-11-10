@@ -7,6 +7,7 @@ function Scan() {
 
   return (
     <div className={styles.container}>
+      <h1 className={styles.title}>Docs Scanner</h1>
       <ImageInput onUpload={setImageURL} />
       <button disabled={imageURL === null}>Scan</button>
     </div>

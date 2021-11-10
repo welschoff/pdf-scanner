@@ -1,17 +1,10 @@
-/* .upload {
-  display: flex;
-    flex-direction: column;
-  font-family: var(--font-family);
-  font-size: 0.8rem;
-  text-decoration: underline;
-}  */
-
-/* .uploadImage {
-  width: 50%;
-  height: 50%;
-} */
-
 .input {
+  width: 100%;
   visibility: hidden;
   position: absolute;
+}
+
+.uploadImage {
+  width: 100%;
+  height: 100%;
 }
