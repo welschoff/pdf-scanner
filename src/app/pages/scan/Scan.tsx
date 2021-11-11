@@ -26,20 +26,18 @@ function Scan(): JSX.Element {
       )}
 
       {!progress && (
-        <div>
-          <button
-            disabled={imageURL === null}
-            onClick={() => {
-              if (imageURL) {
-                recognize(imageURL);
-              }
-            }}
-          >
-            Scan
-          </button>
-          <button className={styles.documents}>Documents</button>
-        </div>
+        <button
+          disabled={imageURL === null}
+          onClick={() => {
+            if (imageURL) {
+              recognize(imageURL);
+            }
+          }}
+        >
+          Scan
+        </button>
       )}
+      <button className={styles.documents}>Documents</button>
     </div>
   );
 }
