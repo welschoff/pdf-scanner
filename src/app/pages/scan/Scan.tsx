@@ -37,7 +37,6 @@ function Scan(): JSX.Element {
           Scan
         </button>
       )}
-      <button className={styles.documents}>Documents</button>
     </div>
   );
 }
