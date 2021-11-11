@@ -1,0 +1,17 @@
+.form {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.input {
+  border-radius: var(--border-radius);
+  padding-left: 0.5em;
+  border: none;
+}
+
+.submit {
+  background-color: var(--color-secondary);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.1rem;
+}

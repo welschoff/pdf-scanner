@@ -1,0 +1,18 @@
+.upload {
+  display: grid;
+  place-items: center;
+}
+
+.input {
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+}
+
+.uploadImage {
+  width: 100%;
+}
+
+.preview {
+  width: 90%;
+}
