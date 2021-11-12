@@ -1,33 +1,17 @@
 import React from 'react';
 import styles from './DocPreview.module.css';
 
-type DocPreviewProps = {
-  title: string;
+export type Document = {
+  id?: number;
   text: string;
+  title: string;
 };
 
-function DocPreview({ title, text }: DocPreviewProps): JSX.Element {
+function DocPreview({ title, text }: Document): JSX.Element {
   return (
-    <div className={styles.container}>
-      <input
-        type="text"
-        placeholder="Search Bar"
-        className={styles.searchbar}
-      />
-      <div className={styles.wrapper}>
-        <article className={styles.doc}>
-          <h2>{title}</h2>
-          <p>{text}</p>
-        </article>
-        <article className={styles.doc}>
-          <h2>{title}</h2>
-          <p>{text}</p>
-        </article>
-        <article className={styles.doc}>
-          <h2>{title}</h2>
-          <p>{text}</p>
-        </article>
-      </div>
+    <div className={styles.wrapper}>
+      <h2>{title}</h2>
+      <p>{text}</p>
     </div>
   );
 }
