@@ -3,8 +3,7 @@
   grid-template-rows: 25% 50% 25%;
   width: 100%;
   margin: 0 auto;
-  justify-items: center;
-  align-items: center;
+  place-items: center;
   height: 100vh;
   background-color: var(--color-primary);
 }
