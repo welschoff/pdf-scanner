@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styles from './DocPreview.module.css';
 
 export type Document = {
   id?: number;
