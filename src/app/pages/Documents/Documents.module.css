@@ -9,9 +9,7 @@
 }
 
 .docs {
-  background-color: var(--color-secondary);
   border-radius: var(--border-radius);
-  color: var(--color-primary);
   height: 80vh;
   width: 90%;
   overflow: scroll;

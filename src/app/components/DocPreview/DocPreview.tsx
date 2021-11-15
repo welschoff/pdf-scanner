@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './DocPreview.module.css';
 
 export type Document = {
   id?: number;
@@ -8,29 +9,24 @@ export type Document = {
 
 function DocPreview({ title, text }: Document): JSX.Element {
   const [collapsed, setCollapsed] = useState(true);
-  //   return (
-  //     <div className={styles.wrapper}>
-  //       <h2>{title}</h2>
-  //       <p>{text}</p>
-  //     </div>
-  //   );
 
-  if (!text || text.length <= 10) {
+  if (!text || text.length <= 20) {
     return (
-      <article>
+      <article className={styles.wrapper}>
         <h2>{title}</h2>
         <p>{text}</p>
       </article>
     );
   } else {
     return (
-      <article>
-        <h2>{title}</h2>
-        <p>
-          {collapsed ? `${text.substring(0, 10)}...` : text}
-          <button onClick={() => setCollapsed(!collapsed)}>
-            Read {collapsed ? 'more' : 'less'}
-          </button>
+      <article className={styles.wrapper}>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.text}>
+          <details onClick={() => setCollapsed(!collapsed)}>
+            <summary className={styles.text}>
+              {collapsed ? `${text.substring(0, 30)}...` : text}
+            </summary>
+          </details>
         </p>
       </article>
     );

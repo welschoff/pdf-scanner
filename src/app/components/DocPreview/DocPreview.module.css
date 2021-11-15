@@ -1,10 +1,21 @@
 .wrapper {
-  padding: 1rem;
   text-align: justify;
   font-family: var(--font-family);
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: 1rem;
 }
 
-.doc {
-  background-color: var(--color-secondary);
-  border-radius: var(--border-radius);
+.text {
+  opacity: 90%;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
 }
