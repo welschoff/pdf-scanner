@@ -25,15 +25,21 @@ body {
   margin: 0;
 }
 
+input {
+  border-radius: var(--border-radius);
+  border: none;
+  padding: 0.2em 0.5em;
+}
+
 button {
-  /* border-radius: 15px;
+  border-radius: 15px;
   border: none;
   background-color: var(--color-secondary);
   font-family: var(--font-family);
   padding: 0.5rem 1rem;
   width: 90%;
   letter-spacing: 0.1rem;
-  text-transform: uppercase; */
+  text-transform: uppercase;
 }
 
 button:hover {

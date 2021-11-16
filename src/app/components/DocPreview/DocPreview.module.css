@@ -16,6 +16,23 @@
   text-transform: uppercase;
 }
 
+.trash {
+  width: 1rem;
+}
+
+.delete {
+  display: grid;
+  grid-template-columns: 95% 5%;
+}
+
 * {
   margin: 0;
+}
+
+.delete > *:nth-child(even) {
+  justify-self: end;
+}
+
+.delete > *:nth-child(odd) {
+  justify-self: start;
 }

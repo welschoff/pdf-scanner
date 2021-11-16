@@ -6,6 +6,11 @@ import DocPreview, { Document } from '../../components/DocPreview/DocPreview';
 
 function Documents(): JSX.Element {
   const [documents, setDocuments] = useState<null | Document[]>(null);
+  const [search, setSearch] = useState('');
+
+  const filteredDocuments = documents?.filter((document) =>
+    document.title.toLowerCase().includes(search.toLowerCase())
+  );
 
   useEffect(() => {
     async function load() {
@@ -18,10 +23,11 @@ function Documents(): JSX.Element {
 
   return (
     <div className={styles.container}>
-      <SearchBar />
+      <SearchBar onSearch={setSearch} />
       <div className={styles.docs}>
-        {documents?.map((document) => (
+        {filteredDocuments?.map((document) => (
           <DocPreview
+            id={document.id}
             title={document.title}
             text={document.text}
             key={document.id}

@@ -1,13 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './SearchBar.module.css';
 
-export default function SearchBar(): JSX.Element {
+type SearchBarProps = {
+  onSearch: (value: string) => void;
+};
+
+export default function SearchBar({ onSearch }: SearchBarProps): JSX.Element {
+  const [value, setValue] = useState('');
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      onSearch(value);
+    }, 300);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [value]);
+
   return (
-    <div>
-      <section className={styles.searchbar}>
-        <input type="text" placeholder="Searchbar" />
-        <input type="submit" value="Search" className={styles.submit} />
-      </section>
-    </div>
+    <label className={styles.searchbar}>
+      <input
+        className={styles.input}
+        value={value}
+        placeholder="Search..."
+        onChange={(event) => {
+          setValue(event.target.value);
+        }}
+      />
+      <span className={styles.clear} onClick={() => setValue('')}>
+        X
+      </span>
+    </label>
   );
 }

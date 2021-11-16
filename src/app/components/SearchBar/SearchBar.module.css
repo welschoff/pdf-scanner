@@ -1,6 +1,21 @@
 .searchbar {
-  width: 90%;
-  border-radius: var(--border-radius);
-  border: none;
-  display: flex;
+  position: relative;
+}
+
+.clear {
+  position: absolute;
+  right: 10px;
+  font-size: 0.9em;
+  color: black;
+}
+
+.input {
+  padding-left: 2em;
+}
+
+.searchbar::before {
+  content: '🔍';
+  font-size: 0.9em;
+  position: absolute;
+  left: 3px;
 }
