@@ -1,0 +1,38 @@
+.wrapper {
+  text-align: justify;
+  font-family: var(--font-family);
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: 1rem;
+}
+
+.text {
+  opacity: 90%;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.trash {
+  width: 1rem;
+}
+
+.delete {
+  display: grid;
+  grid-template-columns: 95% 5%;
+}
+
+* {
+  margin: 0;
+}
+
+.delete > *:nth-child(even) {
+  justify-self: end;
+}
+
+.delete > *:nth-child(odd) {
+  justify-self: start;
+}
